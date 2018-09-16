@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node:
+    command: yarn start
+    image: node:10.10
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/home/node/app
+    working_dir: /home/node/app
